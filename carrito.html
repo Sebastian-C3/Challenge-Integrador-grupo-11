@@ -33,16 +33,20 @@
     </header>
     <main>
         <section>
-            <h1>CARRITO DE COMPRAS</h1>
             <article>
-                <p>DETALLE DEL PRODUCTO</p>
-                <p>CANTIDAD</p>
-                <p>TOTAL</p>
+               <h1>CARRITO DE COMPRAS</h1>
+               <p>DETALLE DEL PRODUCTO</p>
+               <p>CANTIDAD</p>
+               <p>TOTAL</p>
             </article>
+        </section>    
+        <section>
             <article>
-                <h4>BABY YODA BLUEBALL</h4>
-                <p>STAR WARS</p>
-                <p>precio: $ 1799,99</p>
+                <div>
+                 <h4>BABY YODA BLUEBALL</h4>
+                 <p>STAR WARS</p>
+                 <p>precio: $ 1799,99</p>
+                </div>
                 <picture>
                     <img src="./img/star-wars/baby-yoda-1.webp" alt="imagen de baby yoda"/>
                 </picture>
@@ -50,16 +54,14 @@
                   <input type="number" name="number" id="number"/> 
                 </form>
                 <p>$ 3599,98</p>
-                <!-- <form action="item.html" method="get"> -->
-                  <!-- <input type="radio" name="delete" id="delete" value="X"> -->
-                <!-- </form> -->
-                <!-- PENDIENTE POR DEFINIR COMO PONER LA X DE DELETE -->
-                
+                <button type="submit">X</button>
             </article>
             <article>
+              <div>  
                 <h4>PIDGEOTTO</h4>
                 <p>POKEMON</p>
                 <p>precio: $ 1799,99</p>
+              </div>
                 <picture>
                     <img src="./img/pokemon/pidgeotto-1.webp" alt="imagen de pidgeotto"/>
                 </picture>
@@ -67,15 +69,21 @@
                   <input type="number" name="number" id="number"/> 
                 </form>
                 <p>$ 1799,99</p>
-                <!-- <form action="item.html" method="get"> -->
-                  <!-- <input type="radio" name="delete" id="delete" value="X"> -->
-                <!-- </form> -->
-                <!-- PENDIENTE POR DEFINIR COMO PONER LA X DE DELETE -->
+                 <button type="submit">X</button>
             </article>
         </section>
         <section>
             <h1>RESUMEN</h1>
-            <!-- SE HARA CON UNA TABLA, UNA LISTA O CON ETIQUETAS <P>? -->
+           <article>
+            <p>CANTIDAD DE ELEMENTOS</p>
+            <p>3</p>
+            <p>SUBTOTAL</p>
+            <p>$5.399,97</p>
+            <p>ENVIO</p>
+            <p>$0,00</p>
+            <p>TOTAL</p>
+            <p>$5.399,97</p>
+           </article>
             <form action="pagebank" method="get">
                 <input type="submit" value="Ir a pagar"/>    
             </form>      
