@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT | FUNKOSHOP</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <picture>
+                <a href="../index.html">
+                    <img src="img/branding/logo_light_horizontal.svg" alt="Logo de la marca Funkoshop">
+                </a>
+            </picture>
+                <ul>
+                    <li>
+                        <a href="../pages/shop.html">VER TIENDA</a>
+                    </li>
+                    <li>
+                        <a href="../pages/admin.html">ADMIN</a>
+                    </li>
+                    <li>
+                        <a href="../pages/index.html">SALIR</a>
+                    </li>
+                </ul>     
+        </nav>
+    </header>
+    <main>
+        <div class="contenedorTitulo">
+            <h1 class="titulo">EDITAR ITEM</h1>
+        </div>
+        <div class="contenedorCombos">
+            <div class="comboCategoria">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="opcionCategoria">
+                    <option value="figuras" disabled selected>Figuras</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+            </div>
+            <div class="comboLicencia">
+                <label for="licencia">Licencia:</label>
+                <select id="licencia" name="opcionLicencia">
+                    <option value="opcion0" disabled selected>Naruto Shippuden</option>
+                    <option value="opcion1">Opción 1</option>
+                    <option value="opcion2">Opción 2</option>
+                    <option value="opcion3">Opción 3</option>
+                </select>
+            </div>    
+        </div>
+        
+        <div class="contenedorResultado">
+            <label for="nombreProducto">Nombre del producto: </label><span>Kakashi Hatake Shippuden Saga</span>
+        </div>
+
+        <div class="contenedorAreaTexto">
+            <textarea name="descripcion" id="#" cols="60" rows="7">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+        </div>
+        
+        <div class="contenedorEtiquetaCompras">
+            <label for="sku">SKU: <span>NAR001012</span> </label>
+            <label for="precio">Precio: <span>1.799,00</span></label> 
+            <label for="stock">Stock: <span>10</span></label>
+        </div>
+        
+        <div class="contenedorDescuento">
+            <label for="descuento">Descuento: <span>10%</span> </label>
+            <label for="cuotas">Cuotas:</label>
+            <select id="#" name="opcionCuota">
+                <option value="cuota0" disabled selected>6 Cuotas sin interés</option>
+                <option value="cuota1">12 Cuotas</option>
+                <option value="cuota2">18 Cuotas</option>
+                <option value="cuota3">36 Cuotas</option>
+            </select>
+        </div>
+        
+        <div class="contenedorInput">
+            <label>Imágenes: </label>
+            <input type="button" value="Elegir archivos">
+            <span>No se ha seleccionado ningún archivo</span>
+        </div>
+
+        <div class="contenedorImagenes">
+            <div class="imagenUno">
+                <img src="#" alt="noImg">
+                <h6>Frente</h6>
+            </div>
+            <div class="imagenDos">
+                <img src="#" alt="noImg">
+                <h6>Dorso</h6>
+            </div>
+        </div>
+
+        <div class="contenedorBoton">
+            <button type="button">Modificar producto</button>
+        </div>
+        
+
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../pages/shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="../pages/register.html">REGISTRARSE</a>
+                    </li>
+                    <li>
+                        <a href="../pages/login.html">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <picture>
+                    <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+</body>
+</html>
