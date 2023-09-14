@@ -6,7 +6,6 @@
     <title>EDIT | FUNKOSHOP</title>
 </head>
 <body>
-    <!-- Cambios para poder pushear -->
     <header>
         <nav>
             <picture>
@@ -28,77 +27,85 @@
         </nav>
     </header>
     <main>
-        <div class="contenedorTitulo">
-            <h1 class="titulo">EDITAR ITEM</h1>
-        </div>
-        <div class="contenedorCombos">
-            <div class="comboCategoria">
-                <label for="categoria">Categoría:</label>
-                <select id="categoria" name="opcionCategoria">
-                    <option value="figuras" disabled selected>Figuras</option>
-                    <option value="opcion1">Opción 1</option>
-                    <option value="opcion2">Opción 2</option>
-                    <option value="opcion3">Opción 3</option>
-                </select>
+        <form id="formularioEditar" action="#" method="POST">
+            <div class="contenedorTitulo">
+                <h1 class="titulo">EDITAR ITEM</h1>
             </div>
-            <div class="comboLicencia">
-                <label for="licencia">Licencia:</label>
-                <select id="licencia" name="opcionLicencia">
-                    <option value="opcion0" disabled selected>Naruto Shippuden</option>
-                    <option value="opcion1">Opción 1</option>
-                    <option value="opcion2">Opción 2</option>
-                    <option value="opcion3">Opción 3</option>
-                </select>
-            </div>    
-        </div>
-        
-        <div class="contenedorResultado">
-            <label for="nombreProducto">Nombre del producto: </label><span>Kakashi Hatake Shippuden Saga</span>
-        </div>
-
-        <div class="contenedorAreaTexto">
-            <textarea name="descripcion" id="#" cols="60" rows="7">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
-        </div>
-        
-        <div class="contenedorEtiquetaCompras">
-            <label for="sku">SKU: <span>NAR001012</span> </label>
-            <label for="precio">Precio: <span>1.799,00</span></label> 
-            <label for="stock">Stock: <span>10</span></label>
-        </div>
-        
-        <div class="contenedorDescuento">
-            <label for="descuento">Descuento: <span>10%</span> </label>
-            <label for="cuotas">Cuotas:</label>
-            <select id="#" name="opcionCuota">
-                <option value="cuota0" disabled selected>6 Cuotas sin interés</option>
-                <option value="cuota1">12 Cuotas</option>
-                <option value="cuota2">18 Cuotas</option>
-                <option value="cuota3">36 Cuotas</option>
-            </select>
-        </div>
-        
-        <div class="contenedorInput">
-            <label>Imágenes: </label>
-            <input type="button" value="Elegir archivos">
-            <span>No se ha seleccionado ningún archivo</span>
-        </div>
-
-        <div class="contenedorImagenes">
-            <div class="imagenUno">
-                <img src="#" alt="noImg">
-                <h6>Frente</h6>
+            <div class="contenedorCombos">
+                <div class="comboCategoria">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="opcionCategoria">
+                        <option value="figuras" disabled selected>Figuras</option>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+                <div class="comboLicencia">
+                    <label for="licencia">Licencia:</label>
+                    <select id="licencia" name="opcionLicencia">
+                        <option value="opcion0" disabled selected>Naruto Shippuden</option>
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>    
             </div>
-            <div class="imagenDos">
-                <img src="#" alt="noImg">
-                <h6>Dorso</h6>
+            <div class="contenedorNombreProducto">
+                <label for="nombreProducto">Nombre del producto:</label>
+                <input type="text" id="nombreProducto" name="nombreProducto" value="Kakashi Hatake Shippuden Saga">
             </div>
-        </div>
-
-        <div class="contenedorBoton">
-            <button type="button">Modificar producto</button>
-        </div>
-        
-
+            <div class="contenedorDescripcion">
+                <textarea name="descripcion" id="#" cols="60" rows="7">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+            </div>
+            <div class="contenedorCompras">
+                <div class="contenedorSku">
+                    <label for="sku">SKU:</label>
+                    <input type="text" id="sku" name="sku" value="NAR001012">
+                </div>
+                <div class="contenedorPrecio">
+                    <label for="precio">Precio:</label>
+                    <input type="text" id="precio" name="precio" value="1.799,00">
+                </div>
+                <div class="contenedorStock">
+                    <label for="stock">Stock:</label>
+                    <input type="text" id="stock" name="stock" value="10">
+                </div>
+            </div>
+            <div class="contenedorFormaPago">
+                <div class="descuento">
+                    <label for="descuento">Descuento: <span>
+                    <input type="text" id="descuento" value="10%">
+                </div>
+                <div class="cuotas">
+                    <label for="cuotas">Cuotas:</label>
+                    <select id="#" name="opcionCuota">
+                        <option value="cuota0" disabled selected>6 Cuotas sin interés</option>
+                        <option value="cuota1">12 Cuotas</option>
+                        <option value="cuota2">18 Cuotas</option>
+                        <option value="cuota3">36 Cuotas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="contenedorInputImagen">
+                <label>Imágenes: </label>
+                <input type="button" value="Elegir archivos">
+                <span>No se ha seleccionado ningún archivo</span>
+            </div>
+            <div class="contenedorImagenes">
+                <div class="imagenUno">
+                    <img src="#" alt="noImg">
+                    <h6>Frente</h6>
+                </div>
+                <div class="imagenDos">
+                    <img src="#" alt="noImg">
+                    <h6>Dorso</h6>
+                </div>
+            </div>
+            <div class="contenedorBoton">
+                <button type="submit">Modificar producto</button>
+            </div>
+        </form>
     </main>
     <footer>
         <section>
