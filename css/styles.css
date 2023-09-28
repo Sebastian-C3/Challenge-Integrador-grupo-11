@@ -342,8 +342,7 @@ header{
     font-weight: 700;
 }
 
-/* REGISTER ///////////////////////////////////////////////////*/
-
+/* REGISTER */
 .form{
     display: flex;
     flex-direction: column;
@@ -422,9 +421,7 @@ header{
 .form__checkbox-label span{
     color: #1D84B5;
 }
-
-
-/* FIN REGISTER ///////////////////////////////////////////////*/
+/* FIN REGISTER */
 
 /* FOOTER */
 .footer{
