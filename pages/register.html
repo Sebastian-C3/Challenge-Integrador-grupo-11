@@ -8,61 +8,76 @@
 </head>
 <body>
     <header> <!-- Inicio Header -->
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="../index.html">
                     <img src="../img/branding/logo_light_horizontal.svg" alt="Logo de la marca Funkoshop">
                 </a>
-                <ul>
-                    <li>
-                        <a href="../pages/shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contact.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="../pages/cart.html">
-                            <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
-                        </a>
-                    </li>
-                </ul>
-            </picture>
+            </picture>    
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP  <i class="fa-solid fa-chevron-down fa-xs" style="color: #ffffff;"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li class="navbar__item">
+                <li>
+                    <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="../pages/cart.html">
+                        <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>    
         </nav>
     </header><!-- Fin Header -->
     
     <main> <!-- Inicio Main -->
 
-        <section>
-            <form autocomplete="off">
-                <h1>CREA TU CUENTA</h1>
-                <h2>Completa el formulario para ser parte del mundo de los Funkos</h2>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="John">
+        <section class="container">
+            <form autocomplete="off" class="form">
+                <div class="form__header">
+                    <h1 class="form__title">CREA TU CUENTA</h1>
+                    <h2 class="form__subtitle">Completa el formulario para ser parte del mundo de los Funkos</h2>
                 </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Doe">
+                <div class="form__fields">
+                    <div class="form__field">
+                        <label for="nombre" class="form__label">Nombre:</label>
+                        <input type="text" name="nombre" class="form__input" id="nombre" placeholder="John">
+                    </div>
+                    <div class="form__field">
+                        <label for="apellido" class="form__label" >Apellido:</label>
+                        <input type="text" name="apellido" class="form__input" id="apellido" placeholder="Doe">
+                    </div>
+                    <div class="form__field">
+                        <label for="email" class="form__label" >Email:</label>
+                        <input type="text" name="email" class="form__input" id="email" placeholder="johndoe@correo.com">
+                    </div>
+                    <div class="form__field">
+                        <label for="contrasenia" class="form__label" >Contraseña:</label>
+                        <input type="password" name="contrasenia" class="form__input" id="contrasenia" placeholder=".........">
+                    </div>
+                    <div class="form__field">
+                        <label for="contrasenia2" class="form__label" >Repetir contraseña:</label>
+                        <input type="password" name="contrasenia2" class="form__input" id="contrasenia2" placeholder=".........">
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" placeholder="johndoe@correo.com">
-                </div>
-                <div>
-                    <label for="contrasenia">Contraseña:</label>
-                    <input type="password" name="contrasenia" id="contrasenia" placeholder=".........">
-                </div>
-                <div>
-                    <label for="contrasenia2">Repetir contraseña:</label>
-                    <input type="password" name="contrasenia2" id="contrasenia2" placeholder=".........">
-                </div>
-                <div>
-                    <button type="submit">Registrar</button>
-                    <input type="checkbox" name="terminosCondiciones" id="terminosCondiciones">
-                    <label for="terminosCondiciones">Acepto <span><a href="#" target="_blank">Términos y Condiciones</a></span></label>
+                <div class="form__footer">
+                    <button type="submit" class="form__button">Registrar</button>
+                    <input type="checkbox" name="terminosCondiciones" class="form__checkbox" id="terminosCondiciones">
+                    <label for="terminosCondiciones" class="form__checkbox-label">Acepto <span><a href="#" target="_blank">Términos y Condiciones</a></span></label>
                 </div>
 
             </form>
@@ -70,31 +85,28 @@
 
     </main> <!-- Fin Main -->
 
-    <footer> <!-- Inicio Footer -->
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../pages/shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="../pages/register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contact.html">CONTACTO</a>
-                    </li>
-                </ul>
+    <footer class="footer"> <!-- Inicio Footer -->
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
 
-                <picture>
-                    <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-                </picture>
-            </nav>
-        </section>
-
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer> <!-- Fin Footer -->
 </body>
 </html>
