@@ -362,6 +362,7 @@ header{
     font-size: var(--font-display);
     font-weight: 700;
     margin: var(--spacing-28) 0;
+    text-align: center;
 }
 
 .form__subtitle{
