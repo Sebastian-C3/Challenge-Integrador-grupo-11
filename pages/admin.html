@@ -4,166 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | FunkoShop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/1095b3c2ab.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header> <!-- Inicio Header -->
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="../index.html">
                     <img src="../img/branding/logo_light_horizontal.svg" alt="Logo de la marca Funkoshop">
                 </a>
-                <ul>
-                    <li>
-                        <a href="../pages/shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contact.html">CONTACTO</a>
-                    </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="../pages/cart.html">
-                            <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
-                        </a>
-                    </li>
-                </ul>
-            </picture>
-        </nav>
+            </picture>    
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP  <i class="fa-solid fa-chevron-down fa-xs" style="color: #ffffff;"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li class="navbar__item">
+                <li>
+                    <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="../pages/cart.html">
+                        <img src="../img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>    
+          </nav>
     </header><!-- Fin Header -->
     
-    <main> <!-- Inicio Main -->
+    <main > <!-- Inicio Main -->
 
-        <section>
-            <div>
-                <button type="submit">Buscar</button>
+        <section class="searcher container">
+            <div class="searcher__container">
+                <button class="searcher__btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i></button>
                 <form action="POST" autocomplete="off">
-                    <input type="text" name="buscar" id="buscar" placeholder="código, nombre o categoria">
+                    <input class="searcher__input" type="text" name="buscar" id="buscar" placeholder="código, nombre o categoria">
                 </form>
             </div>
         </section>
 
-        <section>
-            <article>
-                <h1>LISTADO DE PRODUCTOS</h1>
-                <div>
+        <section class="list container">
+            <article class="list__title-container">
+                <h1 class="list__title">LISTADO DE PRODUCTOS</h1>
+                <div class="list__title-subcontainer">
                     <p>AGREGAR</p>
-                    <button>+</button>
+                    <button class="list__title-btn"><i class="fa-solid fa-square-plus fa-2xl" style="color: #ff3333;"></i></button>
                 </div>
             </article>
-            <article>
-                <table>
+            <article class="list__item-container">
+                <table class="list__item-table">
                     <tr>
-                        <td>ID</td>
-                        <td>Código</td>
-                        <td>Nombre del Producto</td>
-                        <td>Categoria</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <th class="list__item-td1">ID</th>
+                        <th class="list__item-td1">Código</th>
+                        <th class="list__item-td1">Nombre del Producto</th>
+                        <th class="list__item-td1">Categoria</th>
+                        <th class="list__item-td1"></th>
+                        <th class="list__item-td1"></th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>STW001001</td>
-                        <td>Baby Yoda Blueball </td>
-                        <td>STAR WARS</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">1</td>
+                        <td class="font__item-td2">STW001001</td>
+                        <td class="font__item-td2">Baby Yoda Blueball </td>
+                        <td class="font__item-td2">STAR WARS</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>STW001002</td>
-                        <td>Boba Fett Fighter</td>
-                        <td>STAR WARS</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">2</td>
+                        <td class="font__item-td2">STW001002</td>
+                        <td class="font__item-td2">Boba Fett Fighter</td>
+                        <td class="font__item-td2">STAR WARS</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>STW001003</td>
-                        <td>Luke Skylwalker & Grogu</td>
-                        <td>STAR WARS</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">3</td>
+                        <td class="font__item-td2">STW001003</td>
+                        <td class="font__item-td2">Luke Skylwalker & Grogu</td>
+                        <td class="font__item-td2">STAR WARS</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>STW001004</td>
-                        <td>Stormtrooper Lightsaber</td>
-                        <td>STAR WARS</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">4</td>
+                        <td class="font__item-td2">STW001004</td>
+                        <td class="font__item-td2">Stormtrooper Lightsaber</td>
+                        <td class="font__item-td2">STAR WARS</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>PKM001001</td>
-                        <td>Charmander Smiley</td>
-                        <td>POKEMON</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">5</td>
+                        <td class="font__item-td2">PKM001001</td>
+                        <td class="font__item-td2">Charmander Smiley</td>
+                        <td class="font__item-td2">POKEMON</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>PKM001002</td>
-                        <td>Dragonite Hi!</td>
-                        <td>POKEMON</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">6</td>
+                        <td class="font__item-td2">PKM001002</td>
+                        <td class="font__item-td2">Dragonite Hi!</td>
+                        <td class="font__item-td2">POKEMON</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>PKM001003</td>
-                        <td>Pidgeotto Flying</td>
-                        <td>POKEMON</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">7</td>
+                        <td class="font__item-td2">PKM001003</td>
+                        <td class="font__item-td2">Pidgeotto Flying</td>
+                        <td class="font__item-td2">POKEMON</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>8</td>
-                        <td>PKM001004</td>
-                        <td>Pikachu Smiley</td>
-                        <td>POKEMON</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">8</td>
+                        <td class="font__item-td2">PKM001004</td>
+                        <td class="font__item-td2">Pikachu Smiley</td>
+                        <td class="font__item-td2">POKEMON</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>9</td>
-                        <td>PKM001005</td>
-                        <td>Vulpix Fancy</td>
-                        <td>POKEMON</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">9</td>
+                        <td class="font__item-td2">PKM001005</td>
+                        <td class="font__item-td2">Vulpix Fancy</td>
+                        <td class="font__item-td2">POKEMON</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>10</td>
-                        <td>HPT001001</td>
-                        <td>Harry Potter & Hegwid</td>
-                        <td>HARRY POTTER</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">10</td>
+                        <td class="font__item-td2">HPT001001</td>
+                        <td class="font__item-td2">Harry Potter & Hegwid</td>
+                        <td class="font__item-td2">HARRY POTTER</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>11</td>
-                        <td>HPT001002</td>
-                        <td>Herminione Ball Dress</td>
-                        <td>HARRY POTTER</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">11</td>
+                        <td class="font__item-td2">HPT001002</td>
+                        <td class="font__item-td2">Herminione Ball Dress</td>
+                        <td class="font__item-td2">HARRY POTTER</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>12</td>
-                        <td>HPT001003</td>
-                        <td>Luna Lovegood Lion Mask</td>
-                        <td>HARRY POTTER</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">12</td>
+                        <td class="font__item-td2">HPT001003</td>
+                        <td class="font__item-td2">Luna Lovegood Lion Mask</td>
+                        <td class="font__item-td2">HARRY POTTER</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                     <tr>
-                        <td>13</td>
-                        <td>HPT001004</td>
-                        <td>Snape Patronus</td>
-                        <td>HARRY POTTER</td>
-                        <td><button>X</button></td>
-                        <td><button>X</button></td>
+                        <td class="font__item-td2">13</td>
+                        <td class="font__item-td2">HPT001004</td>
+                        <td class="font__item-td2">Snape Patronus</td>
+                        <td class="font__item-td2">HARRY POTTER</td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-pen fa-2xl" style="color: #1d84b5;"></i></button></td>
+                        <td class="font__item-td2"><button><i class="fa-solid fa-trash-can fa-2xl" style="color: #ff3333;"></i></button></td>
                     </tr>
                 </table>
             </article>
@@ -171,31 +184,28 @@
 
     </main> <!-- Fin Main -->
 
-    <footer> <!-- Inicio Footer -->
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../pages/shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="../pages/register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contact.html">CONTACTO</a>
-                    </li>
-                </ul>
-
-                <picture>
-                    <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-                </picture>
-            </nav>
-        </section>
-
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer> <!-- Fin Footer -->
+    <footer class="footer"><!-- Inicio Footer -->
+        <nav class="navbar container">
+          <ul class="navbar__item">
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+              </li>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/register.html">REGISTRARSE</a>
+              </li>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+              </li>
+              <li class="navbar__item">
+                  <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+              </li>
+          </ul>
+          <picture>
+              <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+          </picture>
+        </nav>
+  
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+      </footer><!-- Fin Footer -->
 </body>
 </html>

@@ -344,6 +344,87 @@ header{
     font-weight: 700;
 }
 
+/* ADMIN */
+
+.searcher__container{
+    display: flex;
+    margin: var(--spacing-24) 0 var(--spacing-36) 0;
+    gap: var(--spacing-20);
+}
+
+.searcher__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.searcher__input{
+    font-size: var(--font-medium);
+    width: 52rem;
+    border: 2px solid var(--dark-bg-solid);
+    border-radius: 6px;
+    padding: var(--spacing-4) var(--spacing-20);
+}
+
+.list__title-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-20);
+}
+
+.list__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+}
+
+.list__title-subcontainer{
+    display: flex;
+    gap: var(--spacing-8);
+}
+
+.list__title-subcontainer p{
+    font-size: var(--font-large);
+    font-weight: 700;
+}
+
+.list__title-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.list__item-container{
+    margin-bottom: var(--spacing-36);
+}
+
+.list__item-td1{
+    font-size: var(--font-large);
+    font-weight: 700;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: justify;
+}
+
+.font__item-td2{
+    font-size: var(--font-large);
+    font-weight: 500;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.font__item-td2 button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.list__item-table{
+    border-collapse: separate;
+    width: 100%;
+    margin: 0 var(--spacing-12);
+}
+
 /* FOOTER */
 .footer{
     background-color: var(--dark-bg-solid);
