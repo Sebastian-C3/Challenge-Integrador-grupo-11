@@ -343,6 +343,125 @@ header{
 }
 
 
+/* SHOP */
+
+.shop-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: var(--spacing-60) 0;
+}
+
+.shop-main__products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.shop-pagination{
+    grid-column: span 3;
+    justify-self: center;
+    margin-top: var(--spacing-36);
+}
+
+.shop-pagination__container{
+    display: flex;
+    gap: 1em;
+}
+
+.shop-pagination__link{
+    display: inline-block;
+    font-size: var(--font-small);
+    font-weight: 700;
+    padding: var(--spacing-8);
+    border: 1px solid var(--dark-bg-solid);
+    border-radius: 5px;
+    gap: var(--spacing-8);
+    width: var(--spacing-36);
+    height: var(--spacing-36);
+    text-align: center;
+    cursor: pointer;
+}
+
+.shop-pagination__link:hover:not(.selected):not(.disabled){
+    background-color: var(--primary-500);
+}
+
+.selected{
+    border: 1px solid var(--primary-solid);
+}
+
+.disabled{
+    background-color: var(--pagination-disable);
+    color: var(--ligth-font-solid);
+}
+
+.active{
+    color: var(--pagination-disable);
+}
+
+.shop-main__section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+}
+
+.shop-main__div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    width: 100%;
+}
+
+.shop-main__label{
+    font-size: var(--font-large);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.shop-main__input{
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-4);
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.shop-main__min-max{
+    display: flex;
+    gap: var(--spacing-16);
+}
+
+.shop-main__mm{
+    font-size: var(--font-small);
+    font-weight: 500;
+    text-align: center;
+}
+
+.shop-main__mm-input{
+    font-size: var(--font-medium);
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shop-main__check-conteiner{
+    display: flex;
+    margin-left: var(--spacing-20);
+    margin-top: var(--spacing-8);
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.shop-main__checkbox{
+    width: var(--spacing-20);
+    height: var(--spacing-20);    
+}
+
+.shop-main__check-label{
+    font-size: var(--font-small);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
 /* ITEM */
 
 .card-product{
