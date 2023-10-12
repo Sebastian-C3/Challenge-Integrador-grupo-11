@@ -342,6 +342,99 @@ header{
     font-weight: 700;
 }
 
+/* LOGIN */
+
+.form__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--spacing-24);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+    margin: var(--spacing-28) 0;
+}
+
+.form__subtitle{
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+    margin-bottom: var(--spacing-20);
+}
+
+.form__sub {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-12);
+    margin: var(--spacing-16) 0 var(--spacing-16) 0;
+    width: 100%;
+}
+
+.form__sub-div{
+    font-size: var(--font-medium);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8)
+}
+
+.form__subtn {
+    display: flex;
+    gap: 1.2rem;
+    margin: var(--spacing-16) 0 var(--spacing-16) 0;
+    align-items: center;
+}
+
+.form__subtn a{
+    font-size: var(--font-xsmal);
+    color: var(--secondary-solid);
+}
+
+.form__label{
+    font-size: var(--font-large);
+}
+
+.form__input {
+    border: none;
+    border-bottom: 3px solid var(--primary-solid);
+    font-size: var(--font-small);
+}
+
+.form__input:focus{
+    border: none;
+    outline: transparent;
+    border-bottom: 3px solid var(--primary-solid);
+    background-color: var(--light-bg-solid);
+}
+
+.form__btn {
+    background-color: var(--primary-solid);
+    color: var(--ligth-font-solid);
+    height: 3.9rem;
+    width: 10.3rem;
+    border: none;
+    font-size: var(--font-xsmal);
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+.form__btn:hover{
+    background-color: var(--dark-solid);
+}
+
+.form__chk{
+    width: var(--spacing-20);
+    height: var(--spacing-20);
+    cursor: pointer;
+}
 
 /* SHOP */
 
