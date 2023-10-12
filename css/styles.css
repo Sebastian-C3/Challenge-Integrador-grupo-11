@@ -590,6 +590,7 @@ header{
     background-color: var(--primary-solid);
     color: var(--ligth-font-solid);
     padding: var(--spacing-8) var(--spacing-12);
+    border: none;
 }
 
 .card-product__btn:hover{
@@ -774,13 +775,13 @@ header{
    align-content: center;
 }
 
-.form__title{
-    font: var(--alternative-font);
-    font-size: 4.2em;
-    font-weight: 700;
-    text-align: center;
-    margin: var(--spacing-36) auto;
-}
+/* .form__title{ */
+    /* font: var(--alternative-font); */
+    /* font-size: 4.2em; */
+    /* font-weight: 700; */
+    /* text-align: center; */
+    /* margin: var(--spacing-36) auto; */
+/* } */
 
 .form__subtitle{
     font: var(--alternative-font);
@@ -797,17 +798,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: var(--font-large);
+    /* font-size: var(--font-large); */
     font-family: var(--base-font);
     font-size: 400;
     gap: var(--spacing-68);
     margin-bottom: var(--spacing-36);
 }
 
-.form__input{
-    border-style: none;
-    border-bottom: var(--primary-solid) 0.2rem solid;
-}
+/* .form__input{ */
+    /* border-style: none; */
+    /* border-bottom: var(--primary-solid) 0.2rem solid; */
+/* } */
 
 .form__footer {
     display: flex;
