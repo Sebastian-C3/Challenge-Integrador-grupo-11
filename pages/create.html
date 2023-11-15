@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDIT | FUNKOSHOP</title>
+    <title>CREATE | FUNKOSHOP</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -29,19 +29,19 @@
     </header>
     <main class="container">
       <section class="section__edit">
-        <h1 class="edit__title">EDITAR ITEM</h1>
+        <h1 class="edit__title">CREAR NUEVO ITEM</h1>
         <form id="formularioEditar" action="#" method="get" class="edit__form">
             <div class="div__categoria-licencia">
                 <label class="label__categoria" for="categoria">Categoría:</label>
                  <select class="select__categoria" id="categoria" name="opcionCategoria">
-                        <option value="figuras" disabled selected>Figuras</option>
+                        <option value="figuras" disabled selected>Seleccionar</option>
                         <option value="opcion1">Opción 1</option>
                         <option value="opcion2">Opción 2</option>
                         <option value="opcion3">Opción 3</option>
                  </select>
                 <label for="licencia" class="label__licencia">Licencia:</label>
                     <select class="select__licencia" id="licencia" name="opcionLicencia">
-                        <option value="opcion0" disabled selected>Naruto Shippuden</option>
+                        <option value="opcion0" disabled selected>Seleccionar</option>
                         <option value="opcion1">Opción 1</option>
                         <option value="opcion2">Opción 2</option>
                         <option value="opcion3">Opción 3</option>
@@ -52,25 +52,25 @@
                 <input class="input__producto" type="text" id="nombreProducto" name="nombreProducto" value="Kakashi Hatake Shippuden Saga" >
             </div>
             <div class="div__categoria-licencia">
-                <textarea class="textarea__producto" name="descripcion" id="#" cols="60" rows="7">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+                <textarea class="textarea__producto" name="descripcion" id="#" cols="60" rows="7">Descripcion del producto</textarea>
             </div>
             <section class="section__detalles">
                     <label class="label__producto-seleccionado" for="sku">SKU:</label>
-                    <input class="input__seleccion" type="text" id="sku" name="sku" value="NAR001012">
+                    <input class="input__seleccion" type="text" id="sku" name="sku" value="SSK111AB001">
                     <label class="label__producto-seleccionado" for="precio">Precio:</label>
-                    <input  class="input__precio" type="text" id="precio" name="precio" value="1.799,00" >
+                    <input  class="input__precio" type="text" id="precio" name="precio" value="$ 0.000,00" >
                     <label class="label__producto-seleccionado" for="stock">Stock:</label>
-                    <input class="input__stock" type="text" id="stock" name="stock" value="10">
+                    <input class="input__stock" type="text" id="stock" name="stock" value="0">
             </section>
             <section class="section__descuento">
                 <div>
                     <label class="label__descuento" for="descuento">Descuento: <span>
-                    <input class="input__descuento" type="text" id="descuento" value="10%">
+                    <input class="input__descuento" type="text" id="descuento" value="0%">
                 </div>
                 <div class="cuotas">
                     <label class="label__cuotas" for="cuotas">Cuotas:</label>
                     <select class="select__cuotas" id="#" name="opcionCuota">
-                        <option value="cuota0" disabled selected>6 Cuotas sin interés</option>
+                        <option value="cuota0" disabled selected>3 Cuotas sin interés</option>
                         <option value="cuota1">12 Cuotas</option>
                         <option value="cuota2">18 Cuotas</option>
                         <option value="cuota3">36 Cuotas</option>
@@ -82,18 +82,11 @@
                 <input class="input__imagen" type="button" value="Elegir archivos">
                 <p class="p__imagen">No se ha seleccionado ningún archivo</p>
             </div>
-            <div class="div_contenedor-imagen">
-                <div class="div__imagen-frente">
-                    <img src="../img/pokemon/dragonite-1.webp" alt="imagen coleccionable de frente de dragonite">
-                    <h4>Frente</h4>
-                </div>
-                <div class="div__imagen-dorso">
-                    <img src="../img/pokemon/dragonite-box.webp" alt="imagen dragonite en caja">
-                    <h4>Dorso</h4>
-                </div>
-            </div>    
-                <button class="boton" type="submit">Modificar producto</button>
-        </form>
+            <div class="div__botones-create">
+                <button class="boton" type="submit">Agregar producto</button>
+                <button class="boton" type="submit">Limpiar</button>
+            </div>
+         </form>
     </section>
     </main>
     <footer  class="footer">
